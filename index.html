@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <header class="card">
+            <h1>Hidrata Aí</h1>
+            <p>Cuide da sua saúde bebendo água regularmente!</p>
+            <!-- Styles -->
+            <link rel="stylesheet" href="/assets/css/style.css">
+        </header>
+    
+        <main>
+            <section id="timer" class="card">
+                <h2>Próximo lembrete</h2>
+                <div id="countdown">00:00</div>
+                <div class="buttons">
+                    <button id="start-btn"><i class="ph ph-play"></i> Iniciar</button>
+                    <button id="pause-btn"><i class="ph ph-pause"></i> Pausar</button>
+                    <button id="reset-btn"><i class="ph ph-arrow-counter-clockwise"></i> Resetar</button>
+                </div>
+            </section>
+        
+            <section id="settings" class="card">
+                <h2>Configurações</h2>
+                <label for="interval-select">Intervalo entre lembretes:</label>
+                <select id="interval-select">
+                    <option value="5">5 minutos</option>
+                    <option value="15">15 minutos</option>
+                    <option value="30">30 minutos</option>
+                    <option value="60">1 hora</option>
+                    <option value="120">2 horas</option>
+                </select>
+            </section>
+        </main>
+    
+        <footer>
+            <p>💧 Feito com carinho para sua saúde.</p>
+        </footer>
+    
+    </body>
+</html>
+<script src="assets/js/script.js"></script>
