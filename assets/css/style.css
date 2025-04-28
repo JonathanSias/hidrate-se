@@ -5,70 +5,13 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #caf0f8;
-    margin: 60px;
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        section#timer {
-            display: flex;
-            gap: 8px;
-        }
-
-        section#settings {
-            display: flex;
-            gap: 8px;
-        }
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.btn-primary {
+    @apply bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded transition;
 }
-
-/* Componentes */
-.card {
-    background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 0.75rem -0.25rem rgba(39, 48, 54, 0.05);
-    padding: 15px;
-    margin: 5px;
-    width: 400px;
-}
-
-.btn-primario {
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 5px;
-}
-
-.btn-secundario {
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 5px;
-}
+  
+.btn-secondary {
+    @apply bg-cyan-200 hover:bg-cyan-300 text-cyan-800 font-bold py-2 px-4 rounded transition;
+}  
 
 /* Animação de fade-in */
 @keyframes fadeIn {
